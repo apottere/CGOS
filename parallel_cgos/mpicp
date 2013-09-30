@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for d in `cat .mpi_dest`;
+do
+   scp "$1" "$d"
+done
+

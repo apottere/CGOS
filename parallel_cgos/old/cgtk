@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ $1 -o `echo $1 | awk -F. '{print $1}'` `pkg-config --cflags --libs gtk+-2.0`
